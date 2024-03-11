@@ -16,9 +16,10 @@ function TaskInput() {
        onClick={function(){
         console.log({task});
         setData([...data, task]);
+        setTask ('');
        }}>Submit</button>
        
-       <div className='border-2 border-slate-500 p-4 m-2 rounded-md text-orange-950 w-[80%]'>
+       <div className='border-2 border-slate-500 p-4 m-2 rounded-md text-orange-950'>
         {
          data.map(function(item, index){
           return <p key={index}>{item}</p>
